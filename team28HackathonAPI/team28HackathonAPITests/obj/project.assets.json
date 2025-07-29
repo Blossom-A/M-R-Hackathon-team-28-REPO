@@ -5508,23 +5508,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\116su\\.nuget\\packages\\": {},
+    "C:\\Users\\OEM\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\116su\\source\\repos\\M-R-Hackathon-team-28-REPO\\team28HackathonAPI\\team28HackathonAPITests\\team28HackathonAPITests.csproj",
+      "projectUniqueName": "C:\\Users\\OEM\\Documents\\Hackathon coding\\M-R-Hackathon-team-28-REPO\\team28HackathonAPI\\team28HackathonAPITests\\team28HackathonAPITests.csproj",
       "projectName": "team28HackathonAPITests",
-      "projectPath": "C:\\Users\\116su\\source\\repos\\M-R-Hackathon-team-28-REPO\\team28HackathonAPI\\team28HackathonAPITests\\team28HackathonAPITests.csproj",
-      "packagesPath": "C:\\Users\\116su\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\116su\\source\\repos\\M-R-Hackathon-team-28-REPO\\team28HackathonAPI\\team28HackathonAPITests\\obj\\",
+      "projectPath": "C:\\Users\\OEM\\Documents\\Hackathon coding\\M-R-Hackathon-team-28-REPO\\team28HackathonAPI\\team28HackathonAPITests\\team28HackathonAPITests.csproj",
+      "packagesPath": "C:\\Users\\OEM\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\OEM\\Documents\\Hackathon coding\\M-R-Hackathon-team-28-REPO\\team28HackathonAPI\\team28HackathonAPITests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\116su\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\OEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

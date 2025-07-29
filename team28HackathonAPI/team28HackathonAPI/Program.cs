@@ -17,11 +17,9 @@ builder.Services.AddCors(options => options.AddDefaultPolicy(
 
 builder.Services.AddControllers();
 
-builder.Services.AddSession();
+builder.Services.AddDistributedMemoryCache();
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
-    .AddEntityFrameworkStores<Team28DbContext>()
-    .AddDefaultTokenProviders();
+builder.Services.AddSession();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Identity;
-
-namespace team28HackathonAPI.Models
+﻿namespace team28HackathonAPI.Models
 {
-    public class AppUser : Microsoft.AspNetCore.Identity.IdentityUser
+    public class AppUser
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
     }
 }
