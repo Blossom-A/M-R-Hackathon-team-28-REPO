@@ -1,32 +1,38 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+
 using team28HackathonAPI.DBContext;
 using team28HackathonAPI.Models;
 
 namespace team28HackathonAPI.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
-        //change to interface calls
-        public readonly Team28DbContext _dbContext;
-        public AuthController(Team28DbContext dbContext)
+
+        private readonly Team28DbContext _context;
+
+        public AuthController(Team28DbContext context)
         {
-            _dbContext = dbContext;
+            _context = context;
         }
+
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginRequest request)
         {
+            var user = _context.AppUsers.FirstOrDefault(u =>
+                u.Email == request.Email && u.Password == request.Password);
 
-            if (request.Username == "testuser" && request.Password == "password123")
+            if (user != null)
             {
-                HttpContext.Session.SetString("User", request.Username);
-                return Ok(new { Message = "Login successful" });
+                HttpContext.Session.SetString("UserId", user.Id.ToString());
+                return Ok(new { Message = "Login successful", user.Name });
             }
 
-            return Unauthorized("Invalid username or password.");
+            return Unauthorized("Invalid credentials");
         }
         //will remove later
         [HttpGet]
@@ -37,12 +43,12 @@ namespace team28HackathonAPI.Controllers
             return Ok(alerts);
         }
 
-    }
-
-    public class LoginRequest
-    {
-        public string Username { get; set; }
-        public string Password { get; set; }
+        [HttpPost("logout")]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return Ok(new { Message = "Logged out" });
+        }
     }
 }
 

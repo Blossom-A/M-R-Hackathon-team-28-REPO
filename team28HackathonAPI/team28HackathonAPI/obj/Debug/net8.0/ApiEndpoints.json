@@ -19,7 +19,96 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "team28HackathonAPI.Controllers.LoginRequest",
+        "Type": "Microsoft.AspNetCore.Identity.Data.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "team28HackathonAPI.Controllers.AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/Auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "team28HackathonAPI.Controllers.DiagnosticController",
+    "Method": "GetAll",
+    "RelativePath": "api/Diagnostic",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "team28HackathonAPI.Controllers.DiagnosticController",
+    "Method": "Add",
+    "RelativePath": "api/Diagnostic",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "test",
+        "Type": "team28HackathonAPI.Models.DiagnosticTest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "team28HackathonAPI.Controllers.DiagnosticController",
+    "Method": "GetById",
+    "RelativePath": "api/Diagnostic/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "team28HackathonAPI.Controllers.DiagnosticController",
+    "Method": "Update",
+    "RelativePath": "api/Diagnostic/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedTest",
+        "Type": "team28HackathonAPI.Models.DiagnosticTest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "team28HackathonAPI.Controllers.DiagnosticController",
+    "Method": "Delete",
+    "RelativePath": "api/Diagnostic/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
