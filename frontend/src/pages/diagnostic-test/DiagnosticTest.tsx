@@ -36,11 +36,11 @@ export default function DiagnosticTest() {
     });
     const data = await response.json();
 
-    if (response.ok) {
-      alertToast({ message: "Successfully created diagnostic test" });
-    } else {
-      alertToast({ message: "Error creating diagnostic test" });
-    }
+    // if (response.ok) {
+    //   alertToast({ message: "Successfully created diagnostic test" });
+    // } else {
+    //   alertToast({ message: "Error creating diagnostic test" });
+    // }
   };
   return (
     <>

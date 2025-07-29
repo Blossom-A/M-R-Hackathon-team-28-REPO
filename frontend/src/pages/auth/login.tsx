@@ -34,7 +34,7 @@ export default function LogIn() {
 
     if (response.ok) {
       setLoadingLogin(false);
-      localStorage.setItem("auth", data)
+      localStorage.setItem("auth", "data")
       navigate("/dashboard");
     } else {
     }
