@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/team28HackathonAPI/.vs/team28HackathonAPI/CopilotIndices/17.14.878.3237/CodeChunks.db
+/team28HackathonAPI/.vs/team28HackathonAPI/CopilotIndices/17.14.878.3237/CodeChunks.db-shm
+/team28HackathonAPI/.vs/team28HackathonAPI/CopilotIndices/17.14.878.3237/CodeChunks.db-wal
+/team28HackathonAPI/.vs/team28HackathonAPI/CopilotIndices/17.14.878.3237/SemanticSymbols.db
+/team28HackathonAPI/.vs/team28HackathonAPI/CopilotIndices/17.14.878.3237/SemanticSymbols.db-shm
+/team28HackathonAPI/.vs/team28HackathonAPI/CopilotIndices/17.14.878.3237/SemanticSymbols.db-wal
+/team28HackathonAPI/.vs/team28HackathonAPI/FileContentIndex/298f293c-692c-42ec-900d-73df7378187e.vsidx
+/team28HackathonAPI/team28HackathonAPI/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+.vs/
