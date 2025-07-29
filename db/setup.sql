@@ -35,3 +35,12 @@ CREATE TABLE MonitoredDestination(
     riskLevel VARCHAR(255) NOT NULL,
     lastChecked DATETIME NOT NULL
 )
+CREATE TABLE Alerts (
+	id int IDENTITY (1,1) PRIMARY KEY,
+	[Message] VARCHAR(255) NOT NULL,
+	[Status] VARCHAR(255) NOT NULL, 
+	[Timestamp] datetime2 NOT NULL
+)
+
+INSERT INTO Alerts VALUES ('First Notification', 'success', '7/29/2025');
+INSERT INTO Alerts VALUES ('2nd Notification', 'info', '7/28/2025');
