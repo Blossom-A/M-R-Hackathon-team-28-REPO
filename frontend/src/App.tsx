@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router";
+import Dashboard from "./Dashboard/dashboard";
+import Placeholder from "./Placeholder/placeholder";
+import AuthGuard from "./lib/guards/AuthGuard";
+import UnAuthGuard from "./lib/guards/UnAuthGuard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>+
+        <Route key="dashboard" path="/" element={<AuthGuard component={<Dashboard />}/>} />
+        <Route key="placeholder" path="/auth" element={<UnAuthGuard component={<Placeholder />}/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
