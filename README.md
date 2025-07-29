@@ -10,3 +10,7 @@ Full-stack application with authentication, database connectivity, and core CRUD
 - **Backend:** ASP.NET Core 8.0 Web API
 - **Database:** SQL Server/SQLite with Entity Framework Core
 - **Authentication:** ASP.NET Identity with JWT tokens
+
+- ## Setup Instructions
+1. Clone this repository
+2. Navigate to project directory
