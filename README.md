@@ -13,5 +13,7 @@ Full-stack application with authentication, database connectivity, and core CRUD
 
 - ## Setup Instructions
 1. Clone this repository
-**git clone https://github.com/Blossom-A/M-R-Hackathon-team-28-REPO.git`**   
+
+```git clone https://github.com/Blossom-A/M-R-Hackathon-team-28-REPO.git
+   
 2. Navigate to project directory
