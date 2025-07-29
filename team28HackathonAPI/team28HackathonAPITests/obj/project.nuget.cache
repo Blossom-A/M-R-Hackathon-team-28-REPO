@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "daSHEIPHacc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\116su\\OneDrive\\Desktop\\M-R-Hackathon-team-28-REPO\\team28HackathonAPI\\team28HackathonAPITests\\team28HackathonAPITests.csproj",
+=======
   "dgSpecHash": "ae75ex3uZnM=",
   "success": true,
   "projectFilePath": "C:\\Users\\OEM\\Documents\\Hackathon coding\\M-R-Hackathon-team-28-REPO\\team28HackathonAPI\\team28HackathonAPITests\\team28HackathonAPITests.csproj",
+>>>>>>> main
   "expectedPackageFiles": [
     "C:\\Users\\OEM\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\OEM\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

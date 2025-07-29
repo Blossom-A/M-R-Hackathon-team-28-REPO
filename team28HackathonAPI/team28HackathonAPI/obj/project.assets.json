@@ -48,6 +48,8 @@
         }
       },
       "Humanizer.Core/2.14.1": {
+<<<<<<< HEAD
+=======
         "type": "package",
         "compile": {
           "lib/net6.0/_._": {
@@ -61,18 +63,21 @@
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/8.0.18": {
+>>>>>>> main
         "type": "package",
         "compile": {
-          "lib/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
+          "lib/net6.0/Humanizer.dll": {
             "related": ".xml"
           }
         }
       },
+<<<<<<< HEAD
+=======
       "Microsoft.AspNetCore.Cryptography.KeyDerivation/8.0.18": {
         "type": "package",
         "dependencies": {
@@ -106,6 +111,7 @@
           }
         }
       },
+>>>>>>> main
       "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
         "compile": {
@@ -655,6 +661,8 @@
         }
       },
       "Microsoft.Extensions.DependencyModel/8.0.2": {
+<<<<<<< HEAD
+=======
         "type": "package",
         "compile": {
           "lib/net8.0/_._": {
@@ -671,39 +679,20 @@
         }
       },
       "Microsoft.Extensions.Identity.Core/8.0.18": {
+>>>>>>> main
         "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "8.0.18",
-          "Microsoft.Extensions.Logging": "8.0.1",
-          "Microsoft.Extensions.Options": "8.0.2"
-        },
         "compile": {
-          "lib/net8.0/Microsoft.Extensions.Identity.Core.dll": {
+          "lib/net8.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Identity.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.Identity.Stores/8.0.18": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Identity.Core": "8.0.18",
-          "Microsoft.Extensions.Logging": "8.0.1"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.Extensions.Identity.Stores.dll": {
+          "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {
             "related": ".xml"
           }
         },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Identity.Stores.dll": {
-            "related": ".xml"
-          }
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "Microsoft.Extensions.Logging/8.0.1": {
@@ -1707,6 +1696,8 @@
     },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
+<<<<<<< HEAD
+=======
       "type": "package",
       "path": "humanizer.core/2.14.1",
       "files": [
@@ -1725,26 +1716,28 @@
     },
     "Microsoft.AspNetCore.Cryptography.Internal/8.0.18": {
       "sha512": "bqtqci1dqXewORUT4x9weBZ49KE2pHrV6B/bIzFapx/EN1HSc5tXNCEYoJSTpahYsWVsSjr2rOogIC1ZS+i5Qg==",
+>>>>>>> main
       "type": "package",
-      "path": "microsoft.aspnetcore.cryptography.internal/8.0.18",
+      "path": "humanizer.core/2.14.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net462/Microsoft.AspNetCore.Cryptography.Internal.dll",
-        "lib/net462/Microsoft.AspNetCore.Cryptography.Internal.xml",
-        "lib/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
-        "lib/net8.0/Microsoft.AspNetCore.Cryptography.Internal.xml",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
-        "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.xml",
-        "microsoft.aspnetcore.cryptography.internal.8.0.18.nupkg.sha512",
-        "microsoft.aspnetcore.cryptography.internal.nuspec"
+        "humanizer.core.2.14.1.nupkg.sha512",
+        "humanizer.core.nuspec",
+        "lib/net6.0/Humanizer.dll",
+        "lib/net6.0/Humanizer.xml",
+        "lib/netstandard1.0/Humanizer.dll",
+        "lib/netstandard1.0/Humanizer.xml",
+        "lib/netstandard2.0/Humanizer.dll",
+        "lib/netstandard2.0/Humanizer.xml",
+        "logo.png"
       ]
     },
-    "Microsoft.AspNetCore.Cryptography.KeyDerivation/8.0.18": {
-      "sha512": "l3RDgZtu9Akh/YFzpGkNWqnydxFDr+sxExtC12Tu+px9O61IinfpksWpDRbZVu1dtyQlzKOjVep/yxUT9LOw5g==",
+    "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+      "sha512": "UcSjPsst+DfAdJGVDsu346FX0ci0ah+lw3WRtn18NUwEqRt70HaOQ7lI72vy3+1LxtqI3T5GWwV39rQSrCzAeg==",
       "type": "package",
+<<<<<<< HEAD
+=======
       "path": "microsoft.aspnetcore.cryptography.keyderivation/8.0.18",
       "files": [
         ".nupkg.metadata",
@@ -1779,6 +1772,7 @@
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
       "sha512": "UcSjPsst+DfAdJGVDsu346FX0ci0ah+lw3WRtn18NUwEqRt70HaOQ7lI72vy3+1LxtqI3T5GWwV39rQSrCzAeg==",
       "type": "package",
+>>>>>>> main
       "path": "microsoft.bcl.asyncinterfaces/6.0.0",
       "files": [
         ".nupkg.metadata",
@@ -2878,6 +2872,8 @@
     },
     "Microsoft.Extensions.DependencyModel/8.0.2": {
       "sha512": "mUBDZZRgZrSyFOsJ2qJJ9fXfqd/kXJwf3AiDoqLD9m6TjY5OO/vLNOb9fb4juC0487eq4hcGN/M2Rh/CKS7QYw==",
+<<<<<<< HEAD
+=======
       "type": "package",
       "path": "microsoft.extensions.dependencymodel/8.0.2",
       "files": [
@@ -2908,40 +2904,33 @@
     },
     "Microsoft.Extensions.Identity.Core/8.0.18": {
       "sha512": "5+UbhNoI7535QXWIe87PoFwaR9rnVPXc4vyYEd2TO8ZxDdmYJXDMWdDNLYCzdMx/oflRvpN/giL0ROTOWxHTbA==",
+>>>>>>> main
       "type": "package",
-      "path": "microsoft.extensions.identity.core/8.0.18",
+      "path": "microsoft.extensions.dependencymodel/8.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net462/Microsoft.Extensions.Identity.Core.dll",
-        "lib/net462/Microsoft.Extensions.Identity.Core.xml",
-        "lib/net8.0/Microsoft.Extensions.Identity.Core.dll",
-        "lib/net8.0/Microsoft.Extensions.Identity.Core.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.Identity.Core.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Identity.Core.xml",
-        "microsoft.extensions.identity.core.8.0.18.nupkg.sha512",
-        "microsoft.extensions.identity.core.nuspec"
-      ]
-    },
-    "Microsoft.Extensions.Identity.Stores/8.0.18": {
-      "sha512": "2r+sYR9Njhj3X2AoqZd6fxlUEKy2OlCz+PNYH2AkQTmNJnX/ivrtTbmIkqB3wZ/M5Rv716Y2VNcdC9irmu8/dA==",
-      "type": "package",
-      "path": "microsoft.extensions.identity.stores/8.0.18",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net462/Microsoft.Extensions.Identity.Stores.dll",
-        "lib/net462/Microsoft.Extensions.Identity.Stores.xml",
-        "lib/net8.0/Microsoft.Extensions.Identity.Stores.dll",
-        "lib/net8.0/Microsoft.Extensions.Identity.Stores.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.Identity.Stores.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Identity.Stores.xml",
-        "microsoft.extensions.identity.stores.8.0.18.nupkg.sha512",
-        "microsoft.extensions.identity.stores.nuspec"
+        "buildTransitive/net461/Microsoft.Extensions.DependencyModel.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyModel.targets",
+        "lib/net462/Microsoft.Extensions.DependencyModel.dll",
+        "lib/net462/Microsoft.Extensions.DependencyModel.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyModel.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyModel.xml",
+        "lib/net7.0/Microsoft.Extensions.DependencyModel.dll",
+        "lib/net7.0/Microsoft.Extensions.DependencyModel.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyModel.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyModel.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.xml",
+        "microsoft.extensions.dependencymodel.8.0.2.nupkg.sha512",
+        "microsoft.extensions.dependencymodel.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.Extensions.Logging/8.0.1": {
@@ -4608,7 +4597,10 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+<<<<<<< HEAD
+=======
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.18",
+>>>>>>> main
       "Microsoft.EntityFrameworkCore >= 8.0.18",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.18",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.18",
@@ -4616,23 +4608,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\OEM\\.nuget\\packages\\": {},
+    "C:\\Users\\116su\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\OEM\\Documents\\Hackathon coding\\M-R-Hackathon-team-28-REPO\\team28HackathonAPI\\team28HackathonAPI\\team28HackathonAPI.csproj",
+      "projectUniqueName": "C:\\Users\\116su\\OneDrive\\Desktop\\M-R-Hackathon-team-28-REPO\\team28HackathonAPI\\team28HackathonAPI\\team28HackathonAPI.csproj",
       "projectName": "team28HackathonAPI",
-      "projectPath": "C:\\Users\\OEM\\Documents\\Hackathon coding\\M-R-Hackathon-team-28-REPO\\team28HackathonAPI\\team28HackathonAPI\\team28HackathonAPI.csproj",
-      "packagesPath": "C:\\Users\\OEM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\OEM\\Documents\\Hackathon coding\\M-R-Hackathon-team-28-REPO\\team28HackathonAPI\\team28HackathonAPI\\obj\\",
+      "projectPath": "C:\\Users\\116su\\OneDrive\\Desktop\\M-R-Hackathon-team-28-REPO\\team28HackathonAPI\\team28HackathonAPI\\team28HackathonAPI.csproj",
+      "packagesPath": "C:\\Users\\116su\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\116su\\OneDrive\\Desktop\\M-R-Hackathon-team-28-REPO\\team28HackathonAPI\\team28HackathonAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\OEM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\116su\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4666,7 +4658,7 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+          "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.18, )"
           },

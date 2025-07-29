@@ -36,8 +36,13 @@
         }
       }
     },
+<<<<<<< HEAD
+    "/api/Auth": {
+      "get": {
+=======
     "/api/Auth/logout": {
       "post": {
+>>>>>>> main
         "tags": [
           "Auth"
         ],
@@ -48,6 +53,8 @@
         }
       }
     },
+<<<<<<< HEAD
+=======
     "/api/Diagnostic": {
       "get": {
         "tags": [
@@ -173,6 +180,7 @@
         }
       }
     },
+>>>>>>> main
     "/WeatherForecast": {
       "get": {
         "tags": [

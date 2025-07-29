@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+
 using team28HackathonAPI.DBContext;
 using team28HackathonAPI.Models;
 
@@ -10,6 +12,7 @@ namespace team28HackathonAPI.Controllers
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
+
         private readonly Team28DbContext _context;
 
         public AuthController(Team28DbContext context)
@@ -30,6 +33,14 @@ namespace team28HackathonAPI.Controllers
             }
 
             return Unauthorized("Invalid credentials");
+        }
+        //will remove later
+        [HttpGet]
+        public IActionResult GetAlerts()
+        {
+            var alerts = _dbContext.Alerts.ToList();
+
+            return Ok(alerts);
         }
 
         [HttpPost("logout")]
