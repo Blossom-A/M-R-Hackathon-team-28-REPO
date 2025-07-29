@@ -11,14 +11,14 @@ const AuthGuard = ({ component }: any) => {
 
   const checkToken = async () => {
     try {
-      let user = true;
+      let user = localStorage.getItem("auth");
       if (!user) {
-        navigate(`/auth`);
+        navigate(`/`);
       }
       setStatus(true);
       return;
     } catch (error) {
-      navigate(`/auth`);
+      navigate(`/`);
     }
   }
 

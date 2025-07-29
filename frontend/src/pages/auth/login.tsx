@@ -34,7 +34,8 @@ export default function LogIn() {
 
     if (response.ok) {
       setLoadingLogin(false);
-      navigate("/home");
+      localStorage.setItem("auth", data)
+      navigate("/dashboard");
     } else {
     }
   };
