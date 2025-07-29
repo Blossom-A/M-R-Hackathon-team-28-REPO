@@ -1,7 +1,8 @@
 import { useState, ChangeEvent, FormEvent } from "react";
-//import toast from "react-hot-toast";
+import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { BACKEND_URL } from "../../assets/globalVariables";
+import styles from "./auth.module.css"
 
 interface FormData {
   name: string;
@@ -49,7 +50,7 @@ export default function SignUp() {
     <main>
       <h1>Sign up</h1>
       <form onSubmit={handleSignUp}>  
-        <div>
+        <div className={styles.formGroup}>
           <label htmlFor="name">Name</label>
           <input
             id="name"
@@ -59,7 +60,7 @@ export default function SignUp() {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div className={styles.formGroup}>
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -70,7 +71,7 @@ export default function SignUp() {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div className={styles.formGroup}>
           <label>Password</label>
           <input
             id="password"
