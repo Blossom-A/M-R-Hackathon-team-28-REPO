@@ -1,6 +1,7 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { BACKEND_URL } from "../../assets/globalVariables";
+import styles from "./auth.module.css";
 
 interface FormData {
   password: string;
@@ -37,11 +38,12 @@ export default function LogIn() {
     } else {
     }
   };
+
   return (
     <main>
-      <h1>Log In</h1>
+      <h1>Welcome back</h1>
       <form onSubmit={handleLogIn}>
-        <div>
+        <div className={styles.formGroup}>
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -52,7 +54,7 @@ export default function LogIn() {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div className={styles.formGroup}>
           <label>Password</label>
           <input
             id="password"
@@ -63,7 +65,7 @@ export default function LogIn() {
             onChange={handleChange}
           />
         </div>
-        <button type="submit"> Sign up</button>
+        <button type="submit"> Log in</button>
       </form>
     </main>
   );
