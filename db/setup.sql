@@ -1,0 +1,30 @@
+use master
+go
+
+DROP DATABASE  IF EXISTS TEAM28MR
+GO
+
+CREATE DATABASE TEAM28MR;
+
+use TEAM28MR;
+
+CREATE TABLE AppUser(
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    name VARCHAR (255) NOT NULL,
+    email VARCHAR (255) NOT NULL,
+    password VARCHAR (255) NOT NULL
+)
+
+CREATE TABLE DiagnosticTest(
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    result VARCHAR (255) NOT NULL,
+    date TIMESTAMP NOT NULL
+)
+
+CREATE TABLE MonitoredDestination(
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    location VARCHAR(255) NOT NULL, 
+    riskLevel VARCHAR(255) NOT NULL,
+    lastChecked TIMESTAMP NOT NULL
+)

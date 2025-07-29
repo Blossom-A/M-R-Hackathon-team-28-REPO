@@ -1,19 +1,24 @@
-import React from "react";
-import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Dashboard from "./Dashboard/dashboard";
-import Placeholder from "./Placeholder/placeholder";
 import AuthGuard from "./lib/guards/AuthGuard";
-import UnAuthGuard from "./lib/guards/UnAuthGuard";
+import UnAuthGuard from "./lib/guards/UnAuthGuard";;
+import SignUpPage from './pages/auth/signup';
+import LoginPage from './pages/auth/login';
+import Home from './pages/main/home';
 
+import "./App.css";
+        
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>+
+  <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage/>} />
+        <Route path="/sign-up" element={<SignUpPage/>} />
+        <Route path="/home" element ={<Home/> } />
         <Route key="dashboard" path="/" element={<AuthGuard component={<Dashboard />}/>} />
         <Route key="placeholder" path="/auth" element={<UnAuthGuard component={<Placeholder />}/>} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
