@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+using team28HackathonAPI.DBContext;
 using team28HackathonAPI.Models;
 
 namespace team28HackathonAPI.Controllers
@@ -8,6 +10,12 @@ namespace team28HackathonAPI.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
+        //change to interface calls
+        public readonly Team28DbContext _dbContext;
+        public AuthController(Team28DbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginRequest request)
         {
@@ -20,6 +28,15 @@ namespace team28HackathonAPI.Controllers
 
             return Unauthorized("Invalid username or password.");
         }
+        //will remove later
+        [HttpGet]
+        public IActionResult GetAlerts()
+        {
+            var alerts = _dbContext.Alerts.ToList();
+
+            return Ok(alerts);
+        }
+
     }
 
     public class LoginRequest

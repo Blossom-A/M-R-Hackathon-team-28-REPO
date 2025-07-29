@@ -1,11 +1,10 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
 using team28HackathonAPI.Models;
 
 namespace team28HackathonAPI.DBContext
 {
-    public class Team28DbContext : IdentityDbContext<AppUser>
+    public class Team28DbContext : DbContext
     {
         public Team28DbContext(DbContextOptions<Team28DbContext> options) : base(options)
         {
@@ -15,5 +14,8 @@ namespace team28HackathonAPI.DBContext
         {
             base.OnModelCreating(modelBuilder);
         }
+
+        public DbSet<Alerts> Alerts { get; set; }
+        public DbSet<AppUser> AppUser { get; set; }
     }
 }

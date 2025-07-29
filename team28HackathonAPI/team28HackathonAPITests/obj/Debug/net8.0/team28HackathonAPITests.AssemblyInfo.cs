@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("team28HackathonAPITests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+678c0740090caa44a23988a8c217b4d10bdd8589")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93d6d74c62454604fc143e6e8e0a3dea764b6b25")]
 [assembly: System.Reflection.AssemblyProductAttribute("team28HackathonAPITests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("team28HackathonAPITests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

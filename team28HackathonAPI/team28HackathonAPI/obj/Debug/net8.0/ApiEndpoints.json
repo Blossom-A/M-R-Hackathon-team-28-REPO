@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "team28HackathonAPI.Controllers.AuthController",
+    "Method": "GetAlerts",
+    "RelativePath": "api/Auth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "team28HackathonAPI.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
     "HttpMethod": "POST",

@@ -56,3 +56,5 @@ describe("AuthGuard", () => {
     // Restore mocks
     (React.useState as any).mockRestore?.();
     (React.useEffect as any).mockRestore?.();
+  });
+});
