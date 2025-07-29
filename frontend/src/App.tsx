@@ -10,12 +10,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<LoginPage />} />
+        <Route path="/" element={<LoginPage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route
           key="dashboard"
           path="/dashboard"
-          element={/*<AuthGuard component={*/<Dashboard/>} ///>/}
+          element={<AuthGuard component={<Dashboard/>} />}
         />
         <Route
           key="Profile"
