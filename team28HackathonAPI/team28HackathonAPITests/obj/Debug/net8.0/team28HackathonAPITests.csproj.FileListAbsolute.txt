@@ -1,0 +1,8 @@
+C:\Users\vmuzi\M-R-Hackathon-team-28-REPO\team28HackathonAPI\team28HackathonAPITests\bin\Debug\net8.0\CoverletSourceRootsMapping_team28HackathonAPITests
+C:\Users\vmuzi\M-R-Hackathon-team-28-REPO\team28HackathonAPI\team28HackathonAPITests\obj\Debug\net8.0\team28HackathonAPITests.csproj.AssemblyReference.cache
+C:\Users\vmuzi\M-R-Hackathon-team-28-REPO\team28HackathonAPI\team28HackathonAPITests\obj\Debug\net8.0\MvcTestingAppManifest.json
+C:\Users\vmuzi\M-R-Hackathon-team-28-REPO\team28HackathonAPI\team28HackathonAPITests\obj\Debug\net8.0\team28HackathonAPITests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vmuzi\M-R-Hackathon-team-28-REPO\team28HackathonAPI\team28HackathonAPITests\obj\Debug\net8.0\team28HackathonAPITests.AssemblyInfoInputs.cache
+C:\Users\vmuzi\M-R-Hackathon-team-28-REPO\team28HackathonAPI\team28HackathonAPITests\obj\Debug\net8.0\team28HackathonAPITests.AssemblyInfo.cs
+C:\Users\vmuzi\M-R-Hackathon-team-28-REPO\team28HackathonAPI\team28HackathonAPITests\obj\Debug\net8.0\team28HackathonAPITests.csproj.CoreCompileInputs.cache
+C:\Users\vmuzi\M-R-Hackathon-team-28-REPO\team28HackathonAPI\team28HackathonAPITests\obj\Debug\net8.0\team28HackathonAPITests.sourcelink.json
