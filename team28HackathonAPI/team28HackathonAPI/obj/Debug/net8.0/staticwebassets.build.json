@@ -1,1 +1,11 @@
-{"Version":1,"Hash":"SLkIt7Wku/KnjK+oqYMT3oMALeuacXbRh1tslMNO3T8=","Source":"team28HackathonAPI","BasePath":"_content/team28HackathonAPI","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "mlBo1oIvzWhZaANsSJMVtXmiTdJu1EAz0aE6uomKsbQ=",
+  "Source": "team28HackathonAPI",
+  "BasePath": "_content/team28HackathonAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

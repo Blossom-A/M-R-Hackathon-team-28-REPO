@@ -25,6 +25,28 @@ cd M-R-Hackathon-team-28-REPO
 ```
 
 ### 2. Backend Setup
+
+#### Backend Setup Instructions
+1. **Ensure your local MSSQL database is running.**
+
+2. **Open the ASP.NET Core Web API solution in Visual Studio or VS Code.**
+
+3. **Configure the database connection string in `appsettings.json`:**
+   ```json
+   "ConnectionStrings": {
+     "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=team28;Trusted_Connection=True;TrustServerCertificate=True;"
+   }
+   ```
+
+4. **Apply the latest migration and update the database in the package manager console:**
+   ```bash
+   add-migration "Initial"
+   update-database
+   ```
+
+5. **Run the backend server by selecting the https button at the top**
+
+#### Alternative CLI Setup
 ```bash
 cd team28HackathonAPI
 dotnet restore
@@ -41,6 +63,17 @@ npm start
 
 ### 4. Database Setup
 Run the SQL script in `db/setup.sql` to create the database schema.
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/diagnostictest` | Add a new diagnostic test |
+| GET | `/api/diagnostictest` | Get all diagnostic tests |
+| GET | `/api/diagnostictest/{id}` | Get a specific test by ID |
+| PUT | `/api/diagnostictest/{id}` | Update a specific test |
+| DELETE | `/api/diagnostictest/{id}` | Delete a test by ID |
+| POST | `/api/auth/login` | Authenticates a user by validating the submitted username and password |
 
 ## Testing
 
